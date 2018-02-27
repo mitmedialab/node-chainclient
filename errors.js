@@ -17,7 +17,21 @@ class ChainInvalidRelError extends ChainError {
     }
 }
 
+class ChainEditError extends ChainError {
+    constructor(message) {
+        super(message || "ChainEditError");
+    }
+}
+
+class ChainCreateError extends ChainError {
+    constructor(message) {
+        super(message || "ChainCreateError");
+    }
+}
+
 module.exports = {
     ChainValueError,
-    ChainInvalidRelError
+    ChainInvalidRelError,
+    ChainEditError,
+    ChainCreateError
 }

@@ -3,12 +3,12 @@ const axios = require('axios');
 const {ChainResource, ChainLink} = require('./resource');
 
 class ChainClient {
-    constructor(opts) {
+    constructor(config) {
         var self=this;
-        self.axios = axios.create();
+        self.axios = axios.create(config);
     }
 
-    async fetchResource(uri, config) {
+    async get(uri, config) {
         var self=this;
         let link = new ChainLink({href: uri}, self);
 
