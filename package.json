@@ -1,6 +1,6 @@
 {
   "name": "chainclient",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "JavaScript Chain API Client",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "author": "Brian Mayton <bmayton@media.mit.edu>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mitmedialab/node-chainclient"
+  },
   "dependencies": {
     "axios": "^0.18.0"
   }
