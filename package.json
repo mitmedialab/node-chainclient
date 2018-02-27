@@ -1,0 +1,14 @@
+{
+  "name": "chainclient",
+  "version": "1.0.0",
+  "description": "JavaScript Chain API Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Mayton <bmayton@media.mit.edu>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
