@@ -24,7 +24,7 @@ class ChainLink {
         let data = response.data;
 
         let resource;
-        if(data._links.items !== undefined) {
+        if(data._links !== undefined && data._links.items !== undefined) {
             resource = new ChainCollection(self.href, self.client);
         } else {
             resource = new ChainResource(self.href, self.client);
@@ -110,6 +110,7 @@ class ChainCollection extends ChainResource {
         }
     }
 
+    /* allow iteration over the collection */
     *[Symbol.iterator]() {
         let self=this;
         for(let i=0; i<self.items.length; i++) {

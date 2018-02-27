@@ -15,6 +15,10 @@ class ChainClient {
         let resource = await link.fetch(config);
         return resource;
     }
+
+    inspect() {
+        return "ChainClient";
+    }
 }
 
 module.exports = ChainClient;

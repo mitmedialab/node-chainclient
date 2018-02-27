@@ -8,6 +8,7 @@ async function test() {
     for(let device of devices) {
         console.log(device.title);
     }
+    console.log(await (await site.rel('ch:devices')).rel('createForm'));
 }
 
 test().then(() => {});
